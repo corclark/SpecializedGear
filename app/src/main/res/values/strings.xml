@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">SpecialGearKotlin</string>
+    <string name="app_name">Gear Shop</string>
+    <string name="gear_name">[ gear name ]</string>
+    <string name="gear_description">[ gear description ]</string>
+    <string name="order">[ order # ]</string>
+    <string name="gear_image">gear image</string>
 </resources>
+
