@@ -20,6 +20,7 @@ import kotlinx.android.synthetic.main.layout_gear_recycler.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.util.*
 
 class GearListActivity : AppCompatActivity() {
 
@@ -51,6 +52,8 @@ class GearListActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<GearModel>>, response: Response<List<GearModel>>) {
                 Log.d(TAG, "STUFF: " + response.body() + " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
                 if(response?.body() != null)
+                // sort gear list by order
+                    Collections.sort(response.body()) { o1, o2 -> o1.order.compareTo(o2.order) }
                     gearListAdapter.setGearListItems(response.body()!!)
             }
 

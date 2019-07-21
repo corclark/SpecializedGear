@@ -1,5 +1,6 @@
 package com.christianstowers.specialgearkotlin.data
 
+import com.christianstowers.specialgearkotlin.data.entities.GearDetailModel
 import com.christianstowers.specialgearkotlin.data.entities.GearModel
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -12,8 +13,8 @@ interface GearAPI {
     @GET("api/gear/")
     fun getGear() : Call<List<GearModel>>
 
-//    @GET("api/gear/{id}/")
-//    fun getGearDetail(@Path("id") Integer id)
+    @GET("api/gear/{id}/")
+    fun getGearDetail (@Path("id") id: Int?) : Call<GearDetailModel>
 
     companion object {
 

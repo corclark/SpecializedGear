@@ -26,14 +26,23 @@
 
             <ImageView
                     android:id="@+id/logo_img"
-                    android:layout_width="50dp"
+                    android:layout_width="25dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/logo1"
+                    android:src="@drawable/logo2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8dp"/>
+            />
 
+            <ImageView
+                    android:id="@+id/kotlin_logo1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/kotlin_logo1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="30dp"/>
 
 
             <TextView android:id="@+id/kotlin_label"
@@ -42,6 +51,7 @@
                       android:text="KOTLIN"
                       android:letterSpacing="0.05"
                       android:textColor="#ffffff"
+                      android:visibility="gone"
                       android:textSize="14sp"
                       app:layout_constraintBottom_toBottomOf="parent"
                       app:layout_constraintTop_toTopOf="parent"
