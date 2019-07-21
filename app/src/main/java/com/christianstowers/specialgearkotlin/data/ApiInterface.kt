@@ -1,5 +1,6 @@
-package com.christianstowers.specialgearkotlin
+package com.christianstowers.specialgearkotlin.data
 
+import com.christianstowers.specialgearkotlin.Movie
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
