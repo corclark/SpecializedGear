@@ -12,14 +12,16 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".ui.GearList.GearListActivity">
+        <activity android:name=".ui.GearList.GearListActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.GearDetailList.GearDetailListActivity">
+        <activity android:name=".ui.GearDetailList.GearDetailListActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
