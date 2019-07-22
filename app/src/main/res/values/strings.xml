@@ -4,5 +4,6 @@
     <string name="gear_description">[ gear description ]</string>
     <string name="order">[ order # ]</string>
     <string name="gear_image">gear image</string>
+    <string name="gear_shop_2">Gear Shop 2.0</string>
 </resources>
 
